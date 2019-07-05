@@ -89,7 +89,7 @@ const removeusermessage = async ctx => {
       ctx.message.message_id
     );
   } catch (error) {
-    console.log(error);
+    // console.log(error);
   }
 };
 
@@ -104,7 +104,7 @@ const replypushmsg = async (ctx, message, markup) => {
       user[4].push(my_message.message_id);
     }
   } catch (error) {
-    console.log(error);
+    // console.log(error);
   }
 };
 
@@ -174,7 +174,7 @@ const announce = async (
         removeChat(chatId);
         return;
       }
-      console.log(error);
+      // console.log(error);
     }
   });
 };
@@ -243,7 +243,7 @@ chatScene.use((ctx, next) => {
       next(ctx);
     }
   } catch (error) {
-    console.log(error);
+    // console.log(error);
   }
 });
 
@@ -272,7 +272,7 @@ chatScene.enter(ctx => {
     // console.log(`${ctx.message.chat.id} exists in queue`);
     process.stdout.write("o");
   } catch (error) {
-    console.log(error);
+    // console.log(error);
   }
 });
 
